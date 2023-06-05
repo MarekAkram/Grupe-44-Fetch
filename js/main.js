@@ -1,10 +1,11 @@
-const divDOM = document.querySelector('div');
-const data = fetch('https://front-end-by-rimantas.github.io/44-grupe-portfolio/css/components/services.css')
-.then ((Response) => {
+const data = fetch("https://front-end-by-rimantas.github.io/44-grupe-portfolio/css/components/services.css"
+)
+  .then((Response) => {
     return Response.text();
-})
-.then((data) => {
+  })
+  .then((data) => {
     for (const user of data) {
-        console.log(user);
+      console.log(user);
     }
-});
+  });
+console.log(data);
